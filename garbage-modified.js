@@ -3,7 +3,7 @@ let garbage;
 
 garbage++;
 
-garbage = 2; //twice defined?
+//const garbage = 2; //twice defined?
 
 sql = 3; // can't reassign a const variable
 
@@ -49,6 +49,11 @@ function getPropFixedBetter(object, propertyName, defaultValue) {
    return object[propertyName];
 }
 
+hero = {
+  name: 'Batman',
+  isVillian: false
+};
+
 function someFunc(array) {
   var index, item, length = array.length;
   /*
@@ -71,8 +76,6 @@ if (notFound) {
 
 let count;
 console.log(count); // => undefined
-
-console.log(hero.city); // => undefined
 
 // Bad
 const object = {
