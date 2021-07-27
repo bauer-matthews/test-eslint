@@ -1,1 +1,1 @@
-tools = ["jshint"]
+tools = ["jshint", "eslint"]
